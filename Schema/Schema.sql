@@ -1,3 +1,6 @@
+CREATE DATABASE AirportDB;
+GO
+
 USE AirportDB;
 GO
 
@@ -88,11 +91,12 @@ GO
 ========================================== */
 CREATE TABLE Flight (
     FlightID      VARCHAR(10)  NOT NULL,   -- FL00001
-    ArrivalTime   DATETIME2    NOT NULL,
+    FlightNum     VARCHAR(10)  NOT NULL,    
     DepartureTime DATETIME2    NOT NULL,
+    ArrivalTime   DATETIME2    NOT NULL,    
     Destination   VARCHAR(100) NOT NULL,
+    Origin        VARCHAR(100)  NOT NULL,
     Status        VARCHAR(20)  NOT NULL,
-    FlightNum     VARCHAR(10)  NOT NULL,
     AircraftID    VARCHAR(10)  NOT NULL,   -- FK -> Aircraft(AircraftID)
 
     CONSTRAINT PK_Flight PRIMARY KEY (FlightID),
@@ -104,6 +108,7 @@ CREATE TABLE Flight (
 
     CONSTRAINT CHK_Flight_Time CHECK (ArrivalTime > DepartureTime),
 
+
     CONSTRAINT FK_Flight_Aircraft
         FOREIGN KEY (AircraftID) REFERENCES Aircraft(AircraftID)
 );
@@ -113,7 +118,7 @@ GO
    5. TICKET  (NO FlightDate)
 ========================================== */
 CREATE TABLE Ticket (
-    TicketID     VARCHAR(7)   NOT NULL, -- TI00001
+    TicketID        VARCHAR(14)   NOT NULL, -- TI00001
     Seat         VARCHAR(10)  NOT NULL,
     Class        VARCHAR(20)  NOT NULL
         CHECK (Class IN ('Economy','Business','First')),
@@ -148,7 +153,7 @@ CREATE TABLE Boarding (
     Seat         VARCHAR(10) NOT NULL,
     Status       VARCHAR(20) NOT NULL
         CHECK (Status IN ('Boarded','Waiting','Gate-Closed','No-Show')),
-    TicketID     VARCHAR(7)  NOT NULL UNIQUE,
+    TicketID        VARCHAR(14)  NOT NULL UNIQUE,
 
     CONSTRAINT PK_Boarding PRIMARY KEY (PassID),
 
@@ -174,7 +179,7 @@ CREATE TABLE Luggage (
     Weight    DECIMAL(5,2)  NOT NULL,
     Status    VARCHAR(20)   NOT NULL
         CHECK (Status IN ('Checked-In','Loaded','Unloaded','Missing')),
-    TicketID  VARCHAR(7)    NOT NULL,
+    TicketID        VARCHAR(14)    NOT NULL,
 
     CONSTRAINT PK_Luggage PRIMARY KEY (LuggageID),
 
@@ -197,7 +202,7 @@ CREATE TABLE Security (
     [Timestamp]     DATETIME2    NOT NULL,
     ScreeningResult VARCHAR(20)  NOT NULL
         CHECK (ScreeningResult IN ('Clear','Flagged','Confiscated')),
-    TicketID        VARCHAR(7)   NOT NULL,
+    TicketID        VARCHAR(14)   NOT NULL,
 
     CONSTRAINT PK_Security PRIMARY KEY (SecurityLogID),
 
