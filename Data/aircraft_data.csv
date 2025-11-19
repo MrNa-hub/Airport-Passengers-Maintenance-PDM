@@ -1,0 +1,61 @@
+AircraftID,RegistrationNum,Model,Capacity,Airline
+AC001,VN-T646,Airbus A350,326,Qatar Airways
+AC002,VN-X269,Airbus A350,278,Emirates
+AC003,VN-Z468,Airbus A350,280,Emirates
+AC004,VN-G879,Airbus A350,207,Singapore Airlines
+AC005,VN-U508,Airbus A321,309,Emirates
+AC006,VN-V456,ATR 72,283,Emirates
+AC007,VN-Z418,Airbus A321,270,Qatar Airways
+AC008,VN-D571,Boeing 787,223,Bamboo Airways
+AC009,VN-V807,Boeing 737,297,Qatar Airways
+AC010,VN-I923,Boeing 787,320,Vietnam Airlines
+AC011,VN-U638,Boeing 737,327,Vietnam Airlines
+AC012,VN-C517,Boeing 737,193,Emirates
+AC013,VN-A750,Boeing 787,230,Vietnam Airlines
+AC014,VN-J301,ATR 72,325,Bamboo Airways
+AC015,VN-A914,Boeing 737,265,Singapore Airlines
+AC016,VN-S909,Boeing 787,320,Vietnam Airlines
+AC017,VN-Y668,Airbus A350,234,Qatar Airways
+AC018,VN-F641,Boeing 737,315,VietJet Air
+AC019,VN-Y778,Airbus A321,306,Emirates
+AC020,VN-X697,ATR 72,186,Qatar Airways
+AC021,VN-P655,Airbus A350,322,Qatar Airways
+AC022,VN-U363,Airbus A350,197,Emirates
+AC023,VN-E160,Boeing 787,260,Vietnam Airlines
+AC024,VN-G550,Boeing 737,244,Vietnam Airlines
+AC025,VN-R253,ATR 72,269,Qatar Airways
+AC026,VN-W143,ATR 72,253,Emirates
+AC027,VN-E157,ATR 72,268,Singapore Airlines
+AC028,VN-C313,Airbus A350,348,Emirates
+AC029,VN-U715,Airbus A350,234,VietJet Air
+AC030,VN-E595,ATR 72,336,Singapore Airlines
+AC031,VN-R358,Boeing 787,236,Emirates
+AC032,VN-K502,Boeing 737,229,Qatar Airways
+AC033,VN-N262,ATR 72,339,Emirates
+AC034,VN-U429,Airbus A321,187,Qatar Airways
+AC035,VN-T296,ATR 72,258,Qatar Airways
+AC036,VN-K899,ATR 72,271,VietJet Air
+AC037,VN-J550,Boeing 737,277,Emirates
+AC038,VN-M247,Boeing 737,250,Emirates
+AC039,VN-H494,Airbus A321,297,Emirates
+AC040,VN-A450,Airbus A321,250,Singapore Airlines
+AC041,VN-Q939,Boeing 737,279,VietJet Air
+AC042,VN-B979,Boeing 737,328,Singapore Airlines
+AC043,VN-G754,ATR 72,209,Emirates
+AC044,VN-H408,Airbus A321,305,Emirates
+AC045,VN-G464,Boeing 737,264,Bamboo Airways
+AC046,VN-S205,Boeing 787,309,Qatar Airways
+AC047,VN-V759,Airbus A321,344,Qatar Airways
+AC048,VN-P403,Airbus A321,218,VietJet Air
+AC049,VN-O182,Boeing 737,305,Singapore Airlines
+AC050,VN-X839,Airbus A321,224,VietJet Air
+AC051,VN-F342,Boeing 787,345,Vietnam Airlines
+AC052,VN-W747,ATR 72,298,Emirates
+AC053,VN-Z515,Airbus A350,260,Vietnam Airlines
+AC054,VN-W536,Airbus A350,341,Vietnam Airlines
+AC055,VN-Z273,Airbus A321,183,Bamboo Airways
+AC056,VN-U775,Boeing 787,220,Emirates
+AC057,VN-G209,Airbus A321,220,Qatar Airways
+AC058,VN-U514,Boeing 737,332,VietJet Air
+AC059,VN-B540,Boeing 787,354,Singapore Airlines
+AC060,VN-K971,Boeing 737,298,Singapore Airlines

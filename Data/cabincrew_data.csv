@@ -1,0 +1,951 @@
+﻿EmployeeID,CertificationArea,CrewRank
+EM00415,International,Flight Attendant
+EM01196,Long-haul,Senior Flight Attendant
+EM00615,International,Senior Flight Attendant
+EM00398,Short-haul,Flight Attendant
+EM00117,Long-haul,Senior Flight Attendant
+EM01195,Short-haul,Chief Purser
+EM00683,Short-haul,Chief Purser
+EM00836,Long-haul,Senior Flight Attendant
+EM00240,Short-haul,Senior Flight Attendant
+EM00540,International,Chief Purser
+EM00351,International,Chief Purser
+EM00332,Domestic,Flight Attendant
+EM01676,Short-haul,Senior Flight Attendant
+EM00946,Long-haul,Flight Attendant
+EM00735,International,Chief Purser
+EM00737,Long-haul,Purser
+EM00757,Domestic,Flight Attendant
+EM00181,Domestic,Senior Flight Attendant
+EM01153,International,Flight Attendant
+EM00480,Short-haul,Chief Purser
+EM00632,Long-haul,Flight Attendant
+EM01308,International,Chief Purser
+EM01627,Long-haul,Senior Flight Attendant
+EM00641,Long-haul,Purser
+EM00093,Long-haul,Purser
+EM00803,International,Senior Flight Attendant
+EM01072,Long-haul,Chief Purser
+EM01364,International,Flight Attendant
+EM01284,Long-haul,Flight Attendant
+EM00105,International,Chief Purser
+EM01509,Long-haul,Purser
+EM01675,Domestic,Senior Flight Attendant
+EM01520,Domestic,Flight Attendant
+EM00929,Domestic,Senior Flight Attendant
+EM01583,International,Chief Purser
+EM00542,Domestic,Chief Purser
+EM00045,Domestic,Chief Purser
+EM01437,Short-haul,Chief Purser
+EM00188,Domestic,Purser
+EM01593,Long-haul,Flight Attendant
+EM00700,Long-haul,Chief Purser
+EM01185,Domestic,Purser
+EM00999,Long-haul,Purser
+EM01603,International,Chief Purser
+EM01724,Long-haul,Senior Flight Attendant
+EM00887,Domestic,Flight Attendant
+EM01532,International,Purser
+EM00153,International,Senior Flight Attendant
+EM00537,Short-haul,Flight Attendant
+EM01428,Domestic,Chief Purser
+EM00138,International,Senior Flight Attendant
+EM01481,Domestic,Chief Purser
+EM00409,Domestic,Chief Purser
+EM00301,Domestic,Chief Purser
+EM01374,Domestic,Senior Flight Attendant
+EM00602,International,Chief Purser
+EM00115,Domestic,Purser
+EM01445,Domestic,Purser
+EM00539,Long-haul,Flight Attendant
+EM01249,Domestic,Purser
+EM00451,International,Chief Purser
+EM00150,Domestic,Flight Attendant
+EM00204,International,Chief Purser
+EM01224,Domestic,Senior Flight Attendant
+EM00267,Domestic,Purser
+EM00028,Short-haul,Senior Flight Attendant
+EM01613,Domestic,Flight Attendant
+EM00194,Long-haul,Chief Purser
+EM01204,Long-haul,Purser
+EM00875,Domestic,Flight Attendant
+EM00899,Long-haul,Flight Attendant
+EM00142,Long-haul,Flight Attendant
+EM00937,International,Flight Attendant
+EM00783,Short-haul,Senior Flight Attendant
+EM00489,Short-haul,Senior Flight Attendant
+EM01572,Domestic,Purser
+EM00212,Short-haul,Flight Attendant
+EM00956,International,Senior Flight Attendant
+EM01158,International,Chief Purser
+EM01392,Domestic,Purser
+EM01575,International,Purser
+EM01610,Short-haul,Flight Attendant
+EM00729,Short-haul,Purser
+EM00161,Short-haul,Chief Purser
+EM01180,Long-haul,Flight Attendant
+EM01614,Domestic,Chief Purser
+EM01772,Long-haul,Senior Flight Attendant
+EM01022,Short-haul,Purser
+EM01729,Domestic,Flight Attendant
+EM00482,Long-haul,Purser
+EM01449,International,Flight Attendant
+EM01782,Domestic,Flight Attendant
+EM00031,International,Flight Attendant
+EM00057,International,Flight Attendant
+EM00418,International,Chief Purser
+EM00289,Short-haul,Purser
+EM01008,Short-haul,Purser
+EM01656,Long-haul,Chief Purser
+EM00559,Short-haul,Purser
+EM01710,Long-haul,Purser
+EM01145,Long-haul,Senior Flight Attendant
+EM00907,International,Flight Attendant
+EM01581,Short-haul,Senior Flight Attendant
+EM00127,Domestic,Purser
+EM01667,Long-haul,Purser
+EM00218,Short-haul,Flight Attendant
+EM00390,Long-haul,Flight Attendant
+EM01604,International,Senior Flight Attendant
+EM01650,International,Purser
+EM01700,Domestic,Flight Attendant
+EM01501,International,Purser
+EM00585,Long-haul,Senior Flight Attendant
+EM00139,Domestic,Chief Purser
+EM01616,Short-haul,Flight Attendant
+EM00121,Domestic,Senior Flight Attendant
+EM01785,Long-haul,Purser
+EM01014,Short-haul,Flight Attendant
+EM01189,Domestic,Senior Flight Attendant
+EM00779,Long-haul,Chief Purser
+EM00215,Long-haul,Purser
+EM00712,International,Chief Purser
+EM01400,Long-haul,Chief Purser
+EM00980,Domestic,Senior Flight Attendant
+EM00072,International,Chief Purser
+EM00640,Short-haul,Chief Purser
+EM01727,International,Senior Flight Attendant
+EM00280,Domestic,Flight Attendant
+EM00284,Short-haul,Chief Purser
+EM00282,Long-haul,Flight Attendant
+EM00603,International,Flight Attendant
+EM00276,Long-haul,Senior Flight Attendant
+EM01230,International,Senior Flight Attendant
+EM00264,Long-haul,Chief Purser
+EM00452,Long-haul,Flight Attendant
+EM00111,International,Flight Attendant
+EM01092,Domestic,Purser
+EM01377,International,Flight Attendant
+EM00262,Long-haul,Purser
+EM00638,Long-haul,Purser
+EM01040,Long-haul,Chief Purser
+EM00433,Short-haul,Flight Attendant
+EM00794,International,Chief Purser
+EM01678,Long-haul,Chief Purser
+EM01119,Domestic,Chief Purser
+EM00954,International,Flight Attendant
+EM00970,Long-haul,Flight Attendant
+EM00455,Long-haul,Chief Purser
+EM00781,Domestic,Purser
+EM00173,Short-haul,Senior Flight Attendant
+EM00467,International,Purser
+EM00675,Short-haul,Flight Attendant
+EM01005,Short-haul,Flight Attendant
+EM00035,International,Purser
+EM00617,Short-haul,Flight Attendant
+EM01205,Short-haul,Purser
+EM01786,Short-haul,Purser
+EM00607,International,Chief Purser
+EM00587,Short-haul,Senior Flight Attendant
+EM00503,International,Purser
+EM00274,Domestic,Flight Attendant
+EM01695,Domestic,Chief Purser
+EM00029,Long-haul,Flight Attendant
+EM01728,International,Chief Purser
+EM00928,International,Purser
+EM00972,Short-haul,Purser
+EM01567,Short-haul,Senior Flight Attendant
+EM01071,Long-haul,Chief Purser
+EM00612,Long-haul,Chief Purser
+EM00456,Domestic,Chief Purser
+EM00406,International,Flight Attendant
+EM01740,Short-haul,Senior Flight Attendant
+EM00528,Long-haul,Chief Purser
+EM00695,International,Purser
+EM00620,International,Senior Flight Attendant
+EM00699,Short-haul,Chief Purser
+EM00375,Short-haul,Chief Purser
+EM01142,Long-haul,Senior Flight Attendant
+EM00898,Long-haul,Senior Flight Attendant
+EM01531,International,Flight Attendant
+EM00573,International,Chief Purser
+EM01125,Domestic,Chief Purser
+EM00790,Short-haul,Chief Purser
+EM00625,Domestic,Purser
+EM00835,Long-haul,Senior Flight Attendant
+EM00927,Domestic,Purser
+EM00113,Short-haul,Chief Purser
+EM01367,Domestic,Senior Flight Attendant
+EM00536,Long-haul,Flight Attendant
+EM00974,International,Flight Attendant
+EM00108,International,Senior Flight Attendant
+EM00725,Long-haul,Senior Flight Attendant
+EM01735,International,Senior Flight Attendant
+EM00126,Domestic,Purser
+EM01505,Short-haul,Chief Purser
+EM00419,Long-haul,Senior Flight Attendant
+EM00588,International,Chief Purser
+EM00091,International,Purser
+EM00853,Long-haul,Senior Flight Attendant
+EM01791,International,Senior Flight Attendant
+EM01624,International,Flight Attendant
+EM00530,International,Flight Attendant
+EM01731,International,Chief Purser
+EM00804,International,Chief Purser
+EM00682,Short-haul,Chief Purser
+EM00560,Short-haul,Flight Attendant
+EM00421,Short-haul,Purser
+EM01307,Long-haul,Flight Attendant
+EM00192,International,Senior Flight Attendant
+EM00750,Long-haul,Flight Attendant
+EM01480,Long-haul,Chief Purser
+EM00806,Domestic,Flight Attendant
+EM01488,Long-haul,Purser
+EM01589,Short-haul,Purser
+EM00242,International,Senior Flight Attendant
+EM01573,Long-haul,Senior Flight Attendant
+EM00475,Domestic,Chief Purser
+EM01397,Short-haul,Senior Flight Attendant
+EM00283,Long-haul,Purser
+EM01736,Short-haul,Chief Purser
+EM00555,Long-haul,Senior Flight Attendant
+EM00165,Domestic,Senior Flight Attendant
+EM00449,International,Purser
+EM01792,International,Purser
+EM00982,Domestic,Chief Purser
+EM00807,Long-haul,Flight Attendant
+EM00285,Long-haul,Chief Purser
+EM01081,Short-haul,Chief Purser
+EM01595,Domestic,Flight Attendant
+EM00535,Long-haul,Purser
+EM00041,International,Flight Attendant
+EM01713,International,Senior Flight Attendant
+EM00089,International,Purser
+EM00831,Long-haul,Purser
+EM00255,Domestic,Chief Purser
+EM01721,Domestic,Senior Flight Attendant
+EM01577,Domestic,Chief Purser
+EM01172,Short-haul,Senior Flight Attendant
+EM01012,International,Flight Attendant
+EM00843,Long-haul,Flight Attendant
+EM01128,International,Chief Purser
+EM01350,International,Senior Flight Attendant
+EM00307,International,Chief Purser
+EM01542,International,Purser
+EM01415,Long-haul,Senior Flight Attendant
+EM00336,Short-haul,Flight Attendant
+EM00885,International,Purser
+EM01028,International,Purser
+EM01129,Long-haul,Senior Flight Attendant
+EM01341,International,Purser
+EM00109,Long-haul,Purser
+EM00730,International,Senior Flight Attendant
+EM00377,Short-haul,Chief Purser
+EM00426,Short-haul,Purser
+EM00003,Domestic,Purser
+EM00920,International,Flight Attendant
+EM00323,Long-haul,Purser
+EM01207,International,Flight Attendant
+EM00708,Domestic,Purser
+EM00951,Long-haul,Chief Purser
+EM00846,Long-haul,Senior Flight Attendant
+EM01556,International,Purser
+EM00586,Long-haul,Senior Flight Attendant
+EM00243,Short-haul,Flight Attendant
+EM01270,Long-haul,Flight Attendant
+EM01557,International,Flight Attendant
+EM00678,Short-haul,Flight Attendant
+EM00888,Domestic,Flight Attendant
+EM00252,Long-haul,Flight Attendant
+EM01131,International,Flight Attendant
+EM01578,Short-haul,Purser
+EM01811,International,Flight Attendant
+EM00172,Domestic,Senior Flight Attendant
+EM00023,Short-haul,Chief Purser
+EM00913,Domestic,Chief Purser
+EM00013,Long-haul,Senior Flight Attendant
+EM01654,Long-haul,Purser
+EM01289,Long-haul,Purser
+EM00833,Short-haul,Chief Purser
+EM00538,Long-haul,Chief Purser
+EM00805,International,Purser
+EM00100,Long-haul,Chief Purser
+EM00760,Short-haul,Flight Attendant
+EM00639,Long-haul,Senior Flight Attendant
+EM01334,International,Senior Flight Attendant
+EM01801,Short-haul,Purser
+EM00230,International,Senior Flight Attendant
+EM00761,Domestic,Purser
+EM01184,Domestic,Senior Flight Attendant
+EM00260,Long-haul,Chief Purser
+EM01384,Domestic,Senior Flight Attendant
+EM00116,Short-haul,Purser
+EM00052,Long-haul,Senior Flight Attendant
+EM01467,Domestic,Chief Purser
+EM00778,Long-haul,Senior Flight Attendant
+EM01637,Domestic,Flight Attendant
+EM01066,Short-haul,Purser
+EM01173,Short-haul,Purser
+EM00862,Short-haul,Purser
+EM01256,Domestic,Senior Flight Attendant
+EM01715,Domestic,Chief Purser
+EM00068,Domestic,Chief Purser
+EM01332,Domestic,Flight Attendant
+EM01300,Domestic,Senior Flight Attendant
+EM01429,International,Flight Attendant
+EM01124,International,Purser
+EM00106,Short-haul,Flight Attendant
+EM00176,International,Chief Purser
+EM01281,Long-haul,Chief Purser
+EM01351,Long-haul,Purser
+EM01378,International,Flight Attendant
+EM00997,Long-haul,Chief Purser
+EM00871,Short-haul,Purser
+EM01671,International,Purser
+EM00581,Domestic,Flight Attendant
+EM01167,Short-haul,Chief Purser
+EM00657,International,Flight Attendant
+EM01165,Domestic,Flight Attendant
+EM01266,Short-haul,Purser
+EM00698,Long-haul,Senior Flight Attendant
+EM01447,Short-haul,Purser
+EM00039,Long-haul,Senior Flight Attendant
+EM01339,International,Senior Flight Attendant
+EM00704,Long-haul,Senior Flight Attendant
+EM00584,Short-haul,Senior Flight Attendant
+EM00082,Short-haul,Chief Purser
+EM01661,Short-haul,Purser
+EM00016,Domestic,Senior Flight Attendant
+EM00205,International,Flight Attendant
+EM00361,Domestic,Chief Purser
+EM00472,Domestic,Chief Purser
+EM00442,International,Purser
+EM00352,Short-haul,Purser
+EM01550,Domestic,Purser
+EM01569,International,Chief Purser
+EM01132,Domestic,Senior Flight Attendant
+EM00595,International,Flight Attendant
+EM00547,Short-haul,Senior Flight Attendant
+EM00268,International,Purser
+EM00556,Domestic,Flight Attendant
+EM00693,Short-haul,Senior Flight Attendant
+EM00107,Domestic,Purser
+EM01803,Domestic,Purser
+EM01373,International,Flight Attendant
+EM01711,Short-haul,Chief Purser
+EM01253,Domestic,Purser
+EM01769,International,Senior Flight Attendant
+EM00667,International,Purser
+EM01691,Short-haul,Chief Purser
+EM00425,Long-haul,Flight Attendant
+EM00554,International,Chief Purser
+EM00370,Short-haul,Senior Flight Attendant
+EM01313,Long-haul,Purser
+EM01216,Long-haul,Flight Attendant
+EM01621,Domestic,Chief Purser
+EM01430,International,Purser
+EM01009,Short-haul,Senior Flight Attendant
+EM00096,Short-haul,Senior Flight Attendant
+EM01620,Short-haul,Chief Purser
+EM00849,Domestic,Purser
+EM00865,Short-haul,Senior Flight Attendant
+EM00808,Domestic,Purser
+EM01426,Domestic,Senior Flight Attendant
+EM00915,Domestic,Purser
+EM00114,Long-haul,Purser
+EM01646,Long-haul,Senior Flight Attendant
+EM01181,Long-haul,Senior Flight Attendant
+EM01027,Long-haul,Purser
+EM01434,Domestic,Purser
+EM01799,Short-haul,Senior Flight Attendant
+EM00304,Domestic,Senior Flight Attendant
+EM00182,Short-haul,Senior Flight Attendant
+EM01179,Long-haul,Purser
+EM01358,International,Chief Purser
+EM01112,Long-haul,Chief Purser
+EM00213,Short-haul,Flight Attendant
+EM00471,Short-haul,Chief Purser
+EM00609,Short-haul,Purser
+EM01611,Short-haul,Chief Purser
+EM01765,International,Chief Purser
+EM01547,Short-haul,Chief Purser
+EM01561,International,Senior Flight Attendant
+EM01798,International,Purser
+EM00717,Long-haul,Flight Attendant
+EM00079,Domestic,Purser
+EM01530,International,Flight Attendant
+EM00964,Long-haul,Flight Attendant
+EM01280,International,Senior Flight Attendant
+EM00174,International,Purser
+EM00814,International,Purser
+EM00791,Domestic,Purser
+EM00904,Long-haul,Flight Attendant
+EM00487,Domestic,Chief Purser
+EM01497,Long-haul,Chief Purser
+EM01064,Long-haul,Purser
+EM01775,Short-haul,Flight Attendant
+EM00550,Short-haul,Chief Purser
+EM00313,Domestic,Chief Purser
+EM00168,Long-haul,Chief Purser
+EM01085,Domestic,Flight Attendant
+EM01087,International,Purser
+EM00529,Short-haul,Chief Purser
+EM01221,Long-haul,Purser
+EM01412,Long-haul,Purser
+EM00715,International,Purser
+EM01096,Long-haul,Purser
+EM00388,Domestic,Senior Flight Attendant
+EM01382,Short-haul,Purser
+EM00453,Short-haul,Senior Flight Attendant
+EM00273,Domestic,Chief Purser
+EM01546,International,Senior Flight Attendant
+EM01741,Short-haul,Purser
+EM00076,Domestic,Chief Purser
+EM01486,International,Senior Flight Attendant
+EM01612,Short-haul,Senior Flight Attendant
+EM00092,Short-haul,Flight Attendant
+EM00643,Short-haul,Senior Flight Attendant
+EM01055,Short-haul,Purser
+EM00435,Short-haul,Flight Attendant
+EM00686,Long-haul,Flight Attendant
+EM01141,Short-haul,Purser
+EM01759,Domestic,Purser
+EM00697,International,Purser
+EM01045,Long-haul,Flight Attendant
+EM00959,Long-haul,Purser
+EM00754,Domestic,Purser
+EM00543,Long-haul,Purser
+EM00103,Short-haul,Senior Flight Attendant
+EM01539,International,Purser
+EM00828,International,Flight Attendant
+EM01074,Short-haul,Flight Attendant
+EM00747,Long-haul,Flight Attendant
+EM00333,Domestic,Purser
+EM01094,Domestic,Purser
+EM00649,Domestic,Senior Flight Attendant
+EM01315,Short-haul,Chief Purser
+EM00317,Short-haul,Flight Attendant
+EM00893,Short-haul,Chief Purser
+EM00610,Long-haul,Purser
+EM01483,International,Chief Purser
+EM01453,Domestic,Senior Flight Attendant
+EM00743,International,Flight Attendant
+EM00365,Short-haul,Chief Purser
+EM01155,Short-haul,Chief Purser
+EM00434,International,Flight Attendant
+EM01393,Domestic,Flight Attendant
+EM00353,International,Flight Attendant
+EM01043,Short-haul,Senior Flight Attendant
+EM01436,Long-haul,Chief Purser
+EM01272,Short-haul,Senior Flight Attendant
+EM00164,International,Flight Attendant
+EM00824,International,Chief Purser
+EM00719,Long-haul,Chief Purser
+EM00600,Short-haul,Chief Purser
+EM01471,International,Chief Purser
+EM01687,Domestic,Purser
+EM01485,Long-haul,Chief Purser
+EM00879,International,Chief Purser
+EM00671,International,Chief Purser
+EM01733,International,Senior Flight Attendant
+EM01340,Long-haul,Flight Attendant
+EM01804,Domestic,Senior Flight Attendant
+EM00001,International,Flight Attendant
+EM00222,Short-haul,Senior Flight Attendant
+EM00912,Long-haul,Chief Purser
+EM01121,International,Chief Purser
+EM00384,Long-haul,Chief Purser
+EM01171,Long-haul,Senior Flight Attendant
+EM00562,Domestic,Senior Flight Attendant
+EM00758,International,Senior Flight Attendant
+EM01448,Domestic,Purser
+EM00357,International,Flight Attendant
+EM01662,Domestic,Senior Flight Attendant
+EM01590,International,Chief Purser
+EM01399,Short-haul,Flight Attendant
+EM01292,Long-haul,Chief Purser
+EM00866,Domestic,Senior Flight Attendant
+EM00012,Domestic,Purser
+EM01013,Long-haul,Purser
+EM00971,Domestic,Senior Flight Attendant
+EM00367,Domestic,Purser
+EM00179,Long-haul,Purser
+EM00882,International,Purser
+EM01293,Short-haul,Chief Purser
+EM00124,International,Purser
+EM00611,Domestic,Purser
+EM00358,Long-haul,Chief Purser
+EM01021,Short-haul,Senior Flight Attendant
+EM01461,Long-haul,Senior Flight Attendant
+EM00681,International,Senior Flight Attendant
+EM01552,Short-haul,Flight Attendant
+EM01489,Short-haul,Senior Flight Attendant
+EM01548,International,Chief Purser
+EM00306,Domestic,Flight Attendant
+EM00953,Short-haul,Chief Purser
+EM01454,Domestic,Senior Flight Attendant
+EM01622,Long-haul,Flight Attendant
+EM01215,Short-haul,Flight Attendant
+EM01758,International,Senior Flight Attendant
+EM01036,Short-haul,Purser
+EM00339,Domestic,Purser
+EM01579,Short-haul,Purser
+EM00594,Short-haul,Senior Flight Attendant
+EM00575,Short-haul,Chief Purser
+EM00679,Long-haul,Purser
+EM01352,Domestic,Chief Purser
+EM01396,Domestic,Flight Attendant
+EM01776,International,Flight Attendant
+EM01564,International,Chief Purser
+EM00040,Domestic,Senior Flight Attendant
+EM00727,Long-haul,Flight Attendant
+EM01592,Short-haul,Senior Flight Attendant
+EM01653,Domestic,Senior Flight Attendant
+EM01422,Domestic,Purser
+EM00890,Domestic,Senior Flight Attendant
+EM01106,International,Senior Flight Attendant
+EM01524,Long-haul,Purser
+EM01628,Domestic,Senior Flight Attendant
+EM00363,International,Flight Attendant
+EM00232,Domestic,Purser
+EM01406,Long-haul,Purser
+EM00368,Long-haul,Senior Flight Attendant
+EM00134,International,Flight Attendant
+EM01458,International,Senior Flight Attendant
+EM01683,Domestic,Chief Purser
+EM00407,Domestic,Senior Flight Attendant
+EM00707,Long-haul,Chief Purser
+EM01232,Long-haul,Purser
+EM01770,Short-haul,Chief Purser
+EM01295,Domestic,Senior Flight Attendant
+EM00185,Long-haul,Senior Flight Attendant
+EM00287,International,Flight Attendant
+EM00569,Domestic,Chief Purser
+EM01738,Short-haul,Chief Purser
+EM01366,International,Flight Attendant
+EM01405,Short-haul,Flight Attendant
+EM01325,Domestic,Chief Purser
+EM00553,Short-haul,Chief Purser
+EM01114,Short-haul,Senior Flight Attendant
+EM01269,International,Purser
+EM00752,Domestic,Chief Purser
+EM00734,Long-haul,Flight Attendant
+EM00303,International,Purser
+EM01783,Domestic,Flight Attendant
+EM00248,International,Senior Flight Attendant
+EM01734,Long-haul,Senior Flight Attendant
+EM00469,International,Senior Flight Attendant
+EM01450,Domestic,Senior Flight Attendant
+EM00026,Long-haul,Flight Attendant
+EM00637,Domestic,Chief Purser
+EM01388,Short-haul,Flight Attendant
+EM01345,Short-haul,Purser
+EM00326,Long-haul,Senior Flight Attendant
+EM00525,Short-haul,Chief Purser
+EM01640,Domestic,Chief Purser
+EM01058,International,Flight Attendant
+EM00576,Short-haul,Purser
+EM01813,International,Flight Attendant
+EM01049,Domestic,Flight Attendant
+EM01042,Long-haul,Flight Attendant
+EM01286,Long-haul,Chief Purser
+EM00149,Long-haul,Chief Purser
+EM01001,Short-haul,Flight Attendant
+EM01719,Short-haul,Purser
+EM01120,Domestic,Chief Purser
+EM00146,Short-haul,Flight Attendant
+EM00025,Domestic,Flight Attendant
+EM00491,Short-haul,Purser
+EM00858,Domestic,Purser
+EM01065,Long-haul,Flight Attendant
+EM01518,International,Senior Flight Attendant
+EM01623,Long-haul,Senior Flight Attendant
+EM00774,International,Chief Purser
+EM01250,Long-haul,Purser
+EM01644,Short-haul,Flight Attendant
+EM01394,Short-haul,Chief Purser
+EM00254,International,Senior Flight Attendant
+EM00226,Short-haul,Chief Purser
+EM00921,Long-haul,Senior Flight Attendant
+EM01070,Short-haul,Senior Flight Attendant
+EM01626,Domestic,Flight Attendant
+EM01704,Short-haul,Chief Purser
+EM01054,International,Flight Attendant
+EM00800,Domestic,Flight Attendant
+EM00597,Long-haul,Chief Purser
+EM00676,Short-haul,Flight Attendant
+EM01151,Short-haul,Senior Flight Attendant
+EM00731,Domestic,Chief Purser
+EM01016,Long-haul,Chief Purser
+EM00128,International,Senior Flight Attendant
+EM00524,Short-haul,Senior Flight Attendant
+EM01318,Domestic,Flight Attendant
+EM01493,Long-haul,Chief Purser
+EM00906,Short-haul,Chief Purser
+EM00382,International,Purser
+EM01600,International,Flight Attendant
+EM00144,Long-haul,Purser
+EM00813,Short-haul,Flight Attendant
+EM00329,Short-haul,Purser
+EM00219,International,Flight Attendant
+EM01584,Short-haul,Chief Purser
+EM01273,Short-haul,Purser
+EM01149,International,Senior Flight Attendant
+EM01781,Short-haul,Senior Flight Attendant
+EM00721,Short-haul,Flight Attendant
+EM00985,Short-haul,Chief Purser
+EM01424,Long-haul,Senior Flight Attendant
+EM00140,Long-haul,Flight Attendant
+EM01095,International,Senior Flight Attendant
+EM00541,Domestic,Purser
+EM00474,Short-haul,Chief Purser
+EM00793,Short-haul,Flight Attendant
+EM00934,Domestic,Purser
+EM00387,Domestic,Purser
+EM01198,International,Flight Attendant
+EM01685,Short-haul,Purser
+EM01059,Long-haul,Senior Flight Attendant
+EM00925,Short-haul,Senior Flight Attendant
+EM01560,Short-haul,Flight Attendant
+EM01815,International,Chief Purser
+EM00278,Long-haul,Senior Flight Attendant
+EM01717,Domestic,Senior Flight Attendant
+EM00732,Short-haul,Senior Flight Attendant
+EM00034,International,Senior Flight Attendant
+EM01742,Domestic,Purser
+EM01514,Long-haul,Purser
+EM00748,Long-haul,Senior Flight Attendant
+EM01327,International,Purser
+EM00884,Short-haul,Purser
+EM01814,International,Flight Attendant
+EM00897,Domestic,Flight Attendant
+EM01737,Long-haul,Senior Flight Attendant
+EM01191,Long-haul,Flight Attendant
+EM01432,International,Senior Flight Attendant
+EM01002,International,Flight Attendant
+EM01768,International,Purser
+EM00479,Short-haul,Flight Attendant
+EM00207,Long-haul,Chief Purser
+EM00148,Domestic,Chief Purser
+EM00051,Short-haul,Purser
+EM00410,Short-haul,Purser
+EM01240,International,Chief Purser
+EM00208,Long-haul,Purser
+EM01218,Short-haul,Flight Attendant
+EM01108,Long-haul,Senior Flight Attendant
+EM01343,Domestic,Senior Flight Attendant
+EM01500,International,Purser
+EM00233,Domestic,Purser
+EM01682,Long-haul,Purser
+EM01587,International,Flight Attendant
+EM01127,International,Purser
+EM00416,Domestic,Flight Attendant
+EM01213,International,Flight Attendant
+EM00184,Long-haul,Senior Flight Attendant
+EM00354,Short-haul,Senior Flight Attendant
+EM00799,International,Chief Purser
+EM01692,Domestic,Flight Attendant
+EM01580,Domestic,Chief Purser
+EM00922,Short-haul,Flight Attendant
+EM01363,International,Purser
+EM00608,International,Purser
+EM01475,Domestic,Flight Attendant
+EM01665,Long-haul,Senior Flight Attendant
+EM01607,Short-haul,Chief Purser
+EM00345,Short-haul,Purser
+EM00002,International,Senior Flight Attendant
+EM01668,Domestic,Purser
+EM00263,Domestic,Purser
+EM00565,Short-haul,Senior Flight Attendant
+EM00227,Long-haul,Senior Flight Attendant
+EM01810,Domestic,Chief Purser
+EM00378,Domestic,Flight Attendant
+EM01599,Long-haul,Purser
+EM00508,Long-haul,Purser
+EM00299,Domestic,Senior Flight Attendant
+EM00626,Short-haul,Purser
+EM00445,Domestic,Chief Purser
+EM00293,Short-haul,Chief Purser
+EM01311,Domestic,Senior Flight Attendant
+EM01404,Long-haul,Flight Attendant
+EM01146,Domestic,Purser
+EM00327,International,Purser
+EM00199,International,Chief Purser
+EM00966,Long-haul,Chief Purser
+EM01082,Long-haul,Purser
+EM01178,Long-haul,Flight Attendant
+EM00705,Long-haul,Senior Flight Attendant
+EM00004,Domestic,Flight Attendant
+EM00281,Long-haul,Purser
+EM00685,International,Purser
+EM00413,Domestic,Flight Attendant
+EM00713,Long-haul,Purser
+EM00996,Domestic,Flight Attendant
+EM01349,International,Purser
+EM00582,Short-haul,Senior Flight Attendant
+EM00976,Long-haul,Flight Attendant
+EM01760,Short-haul,Senior Flight Attendant
+EM00443,International,Chief Purser
+EM01465,International,Senior Flight Attendant
+EM00753,Long-haul,Flight Attendant
+EM01268,Domestic,Purser
+EM01753,Domestic,Senior Flight Attendant
+EM01274,Long-haul,Chief Purser
+EM01244,Short-haul,Purser
+EM01161,Short-haul,Flight Attendant
+EM00033,Long-haul,Flight Attendant
+EM01487,Long-haul,Senior Flight Attendant
+EM00578,Long-haul,Senior Flight Attendant
+EM01170,Domestic,Senior Flight Attendant
+EM01041,Long-haul,Purser
+EM01236,International,Senior Flight Attendant
+EM01035,Short-haul,Purser
+EM01024,International,Chief Purser
+EM01797,Short-haul,Chief Purser
+EM01820,Short-haul,Chief Purser
+EM00768,Domestic,Senior Flight Attendant
+EM00940,Short-haul,Purser
+EM00995,Short-haul,Chief Purser
+EM01529,Short-haul,Senior Flight Attendant
+EM00015,Domestic,Flight Attendant
+EM01802,Domestic,Senior Flight Attendant
+EM00830,International,Senior Flight Attendant
+EM01528,International,Senior Flight Attendant
+EM00156,Long-haul,Purser
+EM00074,Short-haul,Flight Attendant
+EM01596,Short-haul,Flight Attendant
+EM00078,International,Purser
+EM00159,Short-haul,Chief Purser
+EM00175,Domestic,Flight Attendant
+EM01427,Domestic,Purser
+EM00832,Domestic,Chief Purser
+EM00644,Short-haul,Senior Flight Attendant
+EM01633,International,Purser
+EM01140,Long-haul,Senior Flight Attendant
+EM01050,Long-haul,Purser
+EM00261,Domestic,Purser
+EM00810,Short-haul,Senior Flight Attendant
+EM01148,International,Senior Flight Attendant
+EM01763,Short-haul,Chief Purser
+EM01247,International,Chief Purser
+EM00816,Domestic,Chief Purser
+EM01262,International,Purser
+EM00135,Domestic,Chief Purser
+EM00558,International,Chief Purser
+EM01504,Short-haul,Purser
+EM01568,International,Flight Attendant
+EM00071,Domestic,Senior Flight Attendant
+EM00629,Long-haul,Flight Attendant
+EM00171,International,Senior Flight Attendant
+EM01237,Short-haul,Purser
+EM01605,International,Chief Purser
+EM01689,Long-haul,Senior Flight Attendant
+EM00645,Short-haul,Senior Flight Attendant
+EM00389,International,Flight Attendant
+EM00788,International,Purser
+EM00850,Domestic,Flight Attendant
+EM01004,International,Chief Purser
+EM01491,Short-haul,Purser
+EM01038,International,Purser
+EM01197,Domestic,Purser
+EM01242,Domestic,Senior Flight Attendant
+EM01193,Short-haul,Flight Attendant
+EM01744,International,Flight Attendant
+EM00726,Short-haul,Senior Flight Attendant
+EM00580,Short-haul,Chief Purser
+EM00018,Domestic,Senior Flight Attendant
+EM00930,Long-haul,Flight Attendant
+EM01331,Short-haul,Purser
+EM01478,Domestic,Purser
+EM01716,Short-haul,Senior Flight Attendant
+EM00374,Short-haul,Flight Attendant
+EM00962,Domestic,Purser
+EM01435,Short-haul,Chief Purser
+EM00694,Long-haul,Purser
+EM01477,International,Flight Attendant
+EM00868,International,Purser
+EM01411,Long-haul,Purser
+EM01576,Long-haul,Purser
+EM00994,International,Senior Flight Attendant
+EM00987,Domestic,Flight Attendant
+EM01037,International,Purser
+EM00064,International,Purser
+EM00110,Domestic,Flight Attendant
+EM01159,Long-haul,Senior Flight Attendant
+EM00129,Short-haul,Flight Attendant
+EM00523,Short-haul,Senior Flight Attendant
+EM01522,Short-haul,Flight Attendant
+EM01647,International,Flight Attendant
+EM00998,Domestic,Chief Purser
+EM01525,Domestic,Flight Attendant
+EM00141,International,Flight Attendant
+EM01664,Domestic,Flight Attendant
+EM01194,International,Purser
+EM00507,Short-haul,Purser
+EM00874,International,Chief Purser
+EM01484,International,Purser
+EM00325,Long-haul,Flight Attendant
+EM00300,Long-haul,Flight Attendant
+EM00718,Long-haul,Chief Purser
+EM00324,Short-haul,Purser
+EM01203,Long-haul,Flight Attendant
+EM01456,Domestic,Purser
+EM00486,Short-haul,Senior Flight Attendant
+EM00366,International,Chief Purser
+EM00178,International,Senior Flight Attendant
+EM01417,Domestic,Purser
+EM01053,Short-haul,Senior Flight Attendant
+EM01097,Domestic,Flight Attendant
+EM00589,Long-haul,Flight Attendant
+EM00926,Short-haul,Flight Attendant
+EM00459,Short-haul,Senior Flight Attendant
+EM00316,Domestic,Senior Flight Attendant
+EM00385,Domestic,Chief Purser
+EM00947,Long-haul,Senior Flight Attendant
+EM00259,Short-haul,Senior Flight Attendant
+EM01283,International,Purser
+EM01784,Long-haul,Chief Purser
+EM00619,Long-haul,Senior Flight Attendant
+EM01370,Short-haul,Purser
+EM00877,International,Flight Attendant
+EM00330,Domestic,Chief Purser
+EM00780,Domestic,Purser
+EM01122,Domestic,Purser
+EM01666,Short-haul,Chief Purser
+EM00048,International,Flight Attendant
+EM00961,International,Chief Purser
+EM00211,International,Chief Purser
+EM01793,Short-haul,Senior Flight Attendant
+EM01506,Domestic,Senior Flight Attendant
+EM01645,Short-haul,Chief Purser
+EM00577,Short-haul,Chief Purser
+EM00292,Long-haul,Senior Flight Attendant
+EM00817,Long-haul,Senior Flight Attendant
+EM00214,International,Chief Purser
+EM00408,International,Flight Attendant
+EM00642,International,Chief Purser
+EM00949,Domestic,Purser
+EM00614,Long-haul,Senior Flight Attendant
+EM00460,Short-haul,Purser
+EM00047,Long-haul,Senior Flight Attendant
+EM01260,Short-haul,Senior Flight Attendant
+EM00613,Long-haul,Purser
+EM01625,Long-haul,Senior Flight Attendant
+EM00483,Domestic,Senior Flight Attendant
+EM00914,Short-haul,Purser
+EM00296,International,Chief Purser
+EM00318,Short-haul,Senior Flight Attendant
+EM00235,International,Flight Attendant
+EM00399,Domestic,Senior Flight Attendant
+EM01243,Long-haul,Flight Attendant
+EM00605,Short-haul,Flight Attendant
+EM01296,International,Chief Purser
+EM00464,Long-haul,Senior Flight Attendant
+EM01056,Domestic,Purser
+EM00532,International,Purser
+EM00137,Domestic,Chief Purser
+EM00889,Domestic,Chief Purser
+EM01306,Short-haul,Chief Purser
+EM00590,Long-haul,Purser
+EM01365,Short-haul,Flight Attendant
+EM01057,International,Chief Purser
+EM00546,Domestic,Flight Attendant
+EM00738,Short-haul,Senior Flight Attendant
+EM00321,Domestic,Flight Attendant
+EM00740,Long-haul,Chief Purser
+EM00020,Domestic,Flight Attendant
+EM00745,International,Purser
+EM00891,Short-haul,Chief Purser
+EM00579,Domestic,Flight Attendant
+EM00623,International,Flight Attendant
+EM01617,Domestic,Chief Purser
+EM01571,Long-haul,Senior Flight Attendant
+EM01219,International,Senior Flight Attendant
+EM00458,International,Senior Flight Attendant
+EM01335,Domestic,Chief Purser
+EM01126,International,Flight Attendant
+EM00077,Domestic,Flight Attendant
+EM00112,Short-haul,Purser
+EM00545,Long-haul,Senior Flight Attendant
+EM01234,International,Purser
+EM01130,Short-haul,Chief Purser
+EM01379,Short-haul,Chief Purser
+EM01385,International,Chief Purser
+EM00932,Short-haul,Purser
+EM00515,Domestic,Purser
+EM01225,Long-haul,Purser
+EM00935,International,Chief Purser
+EM01390,Short-haul,Flight Attendant
+EM00911,International,Flight Attendant
+EM01690,Domestic,Purser
+EM00393,Long-haul,Purser
+EM00909,Short-haul,Flight Attendant
+EM01099,Short-haul,Flight Attendant
+EM00431,Long-haul,Flight Attendant
+EM00027,Long-haul,Purser
+EM00224,Long-haul,Purser
+EM00527,Domestic,Flight Attendant
+EM00381,Short-haul,Senior Flight Attendant
+EM00036,Long-haul,Chief Purser
+EM00798,International,Chief Purser
+EM01251,Domestic,Purser
+EM01762,Short-haul,Chief Purser
+EM00104,Short-haul,Chief Purser
+EM01003,International,Flight Attendant
+EM00383,Long-haul,Senior Flight Attendant
+EM00841,Domestic,Senior Flight Attendant
+EM00216,Domestic,Purser
+EM00395,International,Chief Purser
+EM01294,Short-haul,Chief Purser
+EM01029,International,Flight Attendant
+EM01521,International,Flight Attendant
+EM00544,Domestic,Senior Flight Attendant
+EM00060,Short-haul,Chief Purser
+EM00854,Domestic,Chief Purser
+EM00350,International,Chief Purser
+EM01702,Short-haul,Flight Attendant
+EM01698,Short-haul,Chief Purser
+EM00797,Domestic,Senior Flight Attendant
+EM01511,International,Purser
+EM01745,Short-haul,Chief Purser
+EM00710,Domestic,Chief Purser
+EM01100,International,Purser
+EM00009,Long-haul,Chief Purser
+EM00601,International,Senior Flight Attendant
+EM00257,Short-haul,Senior Flight Attendant
+EM01264,Short-haul,Chief Purser
+EM01337,International,Senior Flight Attendant
+EM00892,Long-haul,Flight Attendant
+EM00856,Domestic,Senior Flight Attendant
+EM00379,Short-haul,Senior Flight Attendant
+EM00742,Long-haul,Chief Purser
+EM01104,Long-haul,Flight Attendant
+EM01288,Domestic,Flight Attendant
+EM01326,Long-haul,Flight Attendant
+EM00636,International,Senior Flight Attendant
+EM01319,International,Chief Purser
+EM00504,Long-haul,Purser
+EM00967,Short-haul,Flight Attendant
+EM00122,Domestic,Purser
+EM00851,International,Purser
+EM00125,Domestic,Senior Flight Attendant
+EM00130,Domestic,Senior Flight Attendant
+EM00978,Domestic,Chief Purser
+EM00923,Short-haul,Flight Attendant
+EM01512,Long-haul,Chief Purser
+EM00917,Domestic,Chief Purser
+EM00349,Short-haul,Senior Flight Attendant
+EM00402,Short-haul,Flight Attendant
+EM01258,Domestic,Chief Purser
+EM00228,Long-haul,Chief Purser
+EM00819,Long-haul,Senior Flight Attendant
