@@ -47,7 +47,7 @@ GO
 ========================================== */
 CREATE TABLE Employee (
     EmployeeID VARCHAR(7)   NOT NULL,  -- EM00001
-    FullName   VARCHAR(100) NOT NULL,
+    FullName   NVARCHAR(100) NOT NULL,
     
     CONSTRAINT PK_Employee PRIMARY KEY (EmployeeID)
 );
@@ -63,9 +63,9 @@ GO
 CREATE TABLE Passenger (
     PassengerID VARCHAR(7)  NOT NULL,  -- PA00001
     PassportID  VARCHAR(20) NOT NULL UNIQUE,  
-    FirstName   VARCHAR(50) NOT NULL,
-    MiddleName  VARCHAR(50) NULL,
-    LastName    VARCHAR(50) NOT NULL,
+    FirstName   NVARCHAR(50) NOT NULL,
+    MiddleName  NVARCHAR(50) NULL,
+    LastName    NVARCHAR(50) NOT NULL,
     Nation      VARCHAR(60) NULL,
     Email       VARCHAR(254) NULL,
 
@@ -93,7 +93,6 @@ CREATE TABLE Flight (
     Destination   VARCHAR(100) NOT NULL,
     Status        VARCHAR(20)  NOT NULL,
     FlightNum     VARCHAR(10)  NOT NULL,
-    EmployeeID    VARCHAR(7)   NOT NULL,   -- FK -> Employee(EmployeeID)
     AircraftID    VARCHAR(10)  NOT NULL,   -- FK -> Aircraft(AircraftID)
 
     CONSTRAINT PK_Flight PRIMARY KEY (FlightID),
@@ -104,9 +103,6 @@ CREATE TABLE Flight (
     ),
 
     CONSTRAINT CHK_Flight_Time CHECK (ArrivalTime > DepartureTime),
-
-    CONSTRAINT FK_Flight_Employee
-        FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
 
     CONSTRAINT FK_Flight_Aircraft
         FOREIGN KEY (AircraftID) REFERENCES Aircraft(AircraftID)
