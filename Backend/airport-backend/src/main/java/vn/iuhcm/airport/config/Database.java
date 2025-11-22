@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Database {
-    private static final String URL = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=airport_app;encrypt=false;trustServerCertificate=true";
-    private static final String USER = "airport_app";
-    private static final String PASS = "PDM_Sem125!";
+    private static final String URL = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=AirportDB;encrypt=false;trustServerCertificate=true";
+    private static final String USER = "sa";
+    private static final String PASS = "123456789";
 
     public static Connection getConnection() {
         try {
