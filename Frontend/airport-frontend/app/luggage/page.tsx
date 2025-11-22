@@ -1,20 +1,20 @@
-// list: app/luggage/page.tsx
 'use client';
 
 import EntityListPage from '@/app/_components/EntityListPage';
+import { Luggage } from '@/app/types/Luggage'; // Assuming types are in app/types
 
 const columns = [
-  { key: 'luggageID', label: 'LuggageID' },
+  { key: 'luggageID', label: 'Luggage ID' },
+  { key: 'ticketID', label: 'Ticket ID' },
+  { key: 'weight', label: 'Weight (kg)' },
   { key: 'status', label: 'Status' },
-  { key: 'weight', label: 'Weight' },
-  { key: 'ticketID', label: 'TicketID' },
 ];
 
-export default function LuggagePage() {
+export default function LuggagesPage() {
   return (
-    <EntityListPage
-      title="Luggage"
-      apiPath="/api/luggage"
+    <EntityListPage<Luggage>
+      title="Luggage Records"
+      apiPath="/api/luggages"
       columns={columns}
       newHref="/luggage/new"
     />
