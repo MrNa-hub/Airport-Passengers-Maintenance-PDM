@@ -26,7 +26,9 @@ public class LuggageController {
         Luggage body = ctx.bodyAsClass(Luggage.class);
         boolean ok = luggageDAO.insert(body);
 
-        if (ok) ctx.status(201).json(body);
-        else    ctx.status(500).result("Cannot insert luggage");
+        if (ok)
+            ctx.status(201).json(body);
+        else
+            ctx.status(500).result("Cannot insert luggage");
     }
 }
