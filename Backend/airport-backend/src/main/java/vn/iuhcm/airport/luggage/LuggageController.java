@@ -31,4 +31,23 @@ public class LuggageController {
         else
             ctx.status(500).result("Cannot insert luggage");
     }
+
+    // tem
+    /**
+     * Lấy tất cả luggage records theo Ticket ID
+     * Route: /tickets/:ticketId/luggages
+     */
+    public static void getAllByTicketId(Context ctx) {
+        String ticketId = ctx.pathParam("ticketId");
+        List<Luggage> luggages = luggageDAO.findByTicketId(ticketId);
+
+        if (luggages.isEmpty()) {
+            // Return 404 or an empty array depending on preference. Empty array is standard
+            // for listings.
+            ctx.status(200).json(luggages);
+        } else {
+            ctx.json(luggages);
+        }
+    }
+    // tem
 }

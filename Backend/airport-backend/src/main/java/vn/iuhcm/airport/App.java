@@ -1,11 +1,16 @@
 package vn.iuhcm.airport;
 
 import io.javalin.Javalin;
-
+import vn.iuhcm.airport.passenger.Passenger;
 import vn.iuhcm.airport.passenger.PassengerDAO;
+import vn.iuhcm.airport.ticket.Ticket;
 import vn.iuhcm.airport.ticket.TicketDAO;
+import vn.iuhcm.airport.luggage.Luggage;
+import vn.iuhcm.airport.luggage.LuggageController;
 import vn.iuhcm.airport.luggage.LuggageDAO;
+import vn.iuhcm.airport.flight.Flight;
 import vn.iuhcm.airport.flight.FlightDAO;
+import vn.iuhcm.airport.employee.Employee;
 import vn.iuhcm.airport.employee.EmployeeDAO;
 
 public class App {
@@ -26,7 +31,7 @@ public class App {
 
         // PASSENGERS
         app.get("/passengers", ctx -> ctx.json(passengerDAO.findAll()));
-        
+
         app.get("/passengers/:id", ctx -> {
             ctx.json(passengerDAO.findById(ctx.pathParam("id")));
         });
@@ -55,6 +60,12 @@ public class App {
         app.get("/luggages/:id", ctx -> {
             ctx.json(luggageDAO.findById(ctx.pathParam("id")));
         });
+        // tem
+
+        // LUGGAGE: New Nested Route
+        app.get("/tickets/:ticketId/luggages", LuggageController::getAllByTicketId);
+
+        // tem
 
         app.post("/luggages", ctx -> {
             Luggage l = ctx.bodyAsClass(Luggage.class);

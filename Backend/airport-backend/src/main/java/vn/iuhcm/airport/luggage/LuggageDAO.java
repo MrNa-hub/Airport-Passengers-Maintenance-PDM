@@ -79,6 +79,30 @@ public class LuggageDAO {
             throw new RuntimeException("Insert luggage failed: " + e.getMessage());
         }
     }
+    // tem
+
+    // 4) Tìm tất cả luggage theo Ticket ID
+    public List<Luggage> findByTicketId(String ticketId) {
+        List<Luggage> list = new ArrayList<>();
+        try (Connection conn = Database.getConnection()) {
+            String sql = "SELECT * FROM Luggage WHERE TicketID = ?";
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setString(1, ticketId);
+            ResultSet rs = stm.executeQuery();
+
+            while (rs.next()) {
+                list.add(new Luggage(
+                        rs.getString("LuggageID"),
+                        rs.getBigDecimal("Weight"),
+                        rs.getString("Status"),
+                        rs.getString("TicketID")));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+    // tem
 
     // Hàm private: Tạo LuggageID mới từ MAX(LuggageID)
     private String generateNextLuggageID(Connection conn) throws SQLException {
