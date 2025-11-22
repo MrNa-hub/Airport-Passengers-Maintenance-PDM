@@ -108,4 +108,42 @@ public class PassengerDAO {
         // nếu bảng chưa có dòng nào:
         return "PA00001";
     }
+
+    // 4) Cập nhật passenger
+    public boolean update(Passenger p) {
+        try (Connection conn = Database.getConnection()) {
+            String sql = "UPDATE Passenger SET PassportID = ?, FirstName = ?, MiddleName = ?, " +
+                    "LastName = ?, Nation = ?, Email = ? WHERE PassengerID = ?";
+
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setString(1, p.passportID);
+            stm.setString(2, p.firstName);
+            stm.setString(3, p.middleName);
+            stm.setString(4, p.lastName);
+            stm.setString(5, p.nation);
+            stm.setString(6, p.email);
+            stm.setString(7, p.passengerID);
+
+            int affected = stm.executeUpdate();
+            return affected > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Update passenger failed: " + e.getMessage());
+        }
+    }
+
+    // 5) Xóa passenger
+    public boolean delete(String id) {
+        try (Connection conn = Database.getConnection()) {
+            String sql = "DELETE FROM Passenger WHERE PassengerID = ?";
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setString(1, id);
+
+            int affected = stm.executeUpdate();
+            return affected > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Delete passenger failed: " + e.getMessage());
+        }
+    }
 }

@@ -71,4 +71,20 @@ public class PassengerPhoneNumDAO {
             throw new RuntimeException("Insert passenger phone number failed: " + e.getMessage());
         }
     }
+
+    // 4) Xóa phone number
+    public boolean delete(String passengerID, String phoneNum) {
+        try (Connection conn = Database.getConnection()) {
+            String sql = "DELETE FROM Passenger_PhonNum WHERE PassengerID = ? AND PhoneNum = ?";
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setString(1, passengerID);
+            stm.setString(2, phoneNum);
+
+            int affected = stm.executeUpdate();
+            return affected > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Delete passenger phone number failed: " + e.getMessage());
+        }
+    }
 }

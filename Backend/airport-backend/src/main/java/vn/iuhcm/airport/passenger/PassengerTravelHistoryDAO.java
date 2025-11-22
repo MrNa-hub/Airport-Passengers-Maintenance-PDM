@@ -71,4 +71,20 @@ public class PassengerTravelHistoryDAO {
             throw new RuntimeException("Insert passenger travel history failed: " + e.getMessage());
         }
     }
+
+    // 4) Xóa travel history
+    public boolean delete(String passengerID, String travelHistory) {
+        try (Connection conn = Database.getConnection()) {
+            String sql = "DELETE FROM Passenger_TravelHistory WHERE PassengerID = ? AND TravelHistory = ?";
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setString(1, passengerID);
+            stm.setString(2, travelHistory);
+
+            int affected = stm.executeUpdate();
+            return affected > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Delete passenger travel history failed: " + e.getMessage());
+        }
+    }
 }
