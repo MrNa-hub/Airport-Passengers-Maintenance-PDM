@@ -1,33 +1,39 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { apiGet } from '../lib/apiClient';
 
-export type ColumnConfig = {
-  key: string;   // tên field trong JSON
-  label: string; // label hiển thị
+export type ColumnConfig<T> = {
+  key: keyof T;
+  label: string;
 };
 
-type EntityListPageProps = {
+type EntityListPageProps<T> = {
   title: string;
-  apiPath: string;          // ví dụ: "/api/passengers"
-  columns: ColumnConfig[];
-  newHref?: string;         // ví dụ: "/passengers/new"
+  apiPath: string;     // ví dụ: "/passengers"
+  columns: ColumnConfig<T>[];
+  newHref?: string;    // ví dụ: "/passengers/new"
 };
 
-export default function EntityListPage(props: EntityListPageProps) {
+export default function EntityListPage<T extends Record<string, any>>(
+  props: EntityListPageProps<T>
+) {
   const { title, apiPath, columns, newHref } = props;
-  const [data, setData] = useState<any[]>([]);
+
+  const [data, setData] = useState<T[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const load = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`http://localhost:7070${apiPath}`);
-      const json = await res.json();
+      setError(null);
+      const json = await apiGet(apiPath); 
       setData(json);
-    } catch (err) {
+    } catch (err: any) {
+      setError(err.message ?? 'Load failed');
       console.error(err);
-      alert('Load data failed');
     } finally {
       setLoading(false);
     }
@@ -38,48 +44,50 @@ export default function EntityListPage(props: EntityListPageProps) {
   }, []);
 
   return (
-    <main style={{ padding: 24 }}>
-      <h1>{title}</h1>
+    <main className="p-6 space-y-4">
+      <div className="flex justify-between items-center">
+        <h1 className="text-2xl font-semibold">{title}</h1>
 
-      <div style={{ marginTop: 8, marginBottom: 8 }}>
-        <button onClick={load} disabled={loading}>
-          {loading ? 'Loading...' : 'Reload'}
-        </button>
+        <div className="space-x-2">
+          <button
+            onClick={load}
+            disabled={loading}
+            className="px-3 py-1 border rounded hover:bg-gray-100"
+          >
+            {loading ? 'Loading...' : 'Reload'}
+          </button>
 
-        {newHref && (
-          <a href={newHref}>
-            <button style={{ marginLeft: 8 }}>New</button>
-          </a>
-        )}
+          {newHref && (
+            <Link href={newHref}>
+              <button className="px-3 py-1 border rounded bg-blue-600 text-white hover:bg-blue-700">
+                New
+              </button>
+            </Link>
+          )}
+        </div>
       </div>
 
-      <table
-        style={{
-          borderCollapse: 'collapse',
-          width: '100%',
-          marginTop: 8,
-        }}
-      >
+      {error && <p className="text-red-600">{error}</p>}
+
+      <table className="w-full border-collapse">
         <thead>
-          <tr>
+          <tr className="bg-gray-100">
             {columns.map(col => (
               <th
-                key={col.key}
-                style={{ border: '1px solid #ccc', padding: 4 }}
+                key={String(col.key)}
+                className="border px-2 py-1 text-left"
               >
                 {col.label}
               </th>
             ))}
           </tr>
         </thead>
+
         <tbody>
           {data.map((row, idx) => (
-            <tr key={idx}>
+            <tr key={idx} className="hover:bg-gray-50">
               {columns.map(col => (
-                <td
-                  key={col.key}
-                  style={{ border: '1px solid #ccc', padding: 4 }}
-                >
+                <td key={String(col.key)} className="border px-2 py-1">
                   {String(row[col.key] ?? '')}
                 </td>
               ))}
@@ -90,11 +98,7 @@ export default function EntityListPage(props: EntityListPageProps) {
             <tr>
               <td
                 colSpan={columns.length}
-                style={{
-                  border: '1px solid #ccc',
-                  padding: 8,
-                  textAlign: 'center',
-                }}
+                className="text-center border px-2 py-4"
               >
                 No data
               </td>
