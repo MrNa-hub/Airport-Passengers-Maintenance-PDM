@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Database {
-    private static final String URL = "jdbc:sqlserver://QANHBUNCHA\\SQLEXPRESS;databaseName=AirportDB;encrypt=false;trustServerCertificate=true";
+    // change the URL (localhost\\SQLEXPRESS) to do the database connection
+    private static final String URL = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=AirportDB;encrypt=false;trustServerCertificate=true";
     private static final String USER = "sa";
     private static final String PASS = "123456789";
 
