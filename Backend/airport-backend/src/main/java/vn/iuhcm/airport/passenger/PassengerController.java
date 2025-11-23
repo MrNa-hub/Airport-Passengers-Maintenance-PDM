@@ -7,13 +7,16 @@ public class PassengerController {
 
     private static final PassengerDAO passengerDAO = new PassengerDAO();
 
+    // GET /api/passengers
     public static void getAll(Context ctx) {
         List<Passenger> passengers = passengerDAO.findAll();
         ctx.json(passengers);
     }
 
+    // GET /api/passengers/{id}
     public static void getById(Context ctx) {
         String id = ctx.pathParam("id");
+
         Passenger p = passengerDAO.findById(id);
 
         if (p == null) {
@@ -23,11 +26,17 @@ public class PassengerController {
         }
     }
 
+    // POST /api/passengers
     public static void create(Context ctx) {
         Passenger body = ctx.bodyAsClass(Passenger.class);
-        boolean ok = passengerDAO.insert(body);
 
-        if (ok) ctx.status(201).json(body);
-        else    ctx.status(500).result("Cannot insert passenger");
+        try {
+            Passenger created = passengerDAO.insert(body);
+
+            ctx.status(201).json(created);
+
+        } catch (Exception e) {
+            ctx.status(500).result("Cannot insert passenger: " + e.getMessage());
+        }
     }
 }

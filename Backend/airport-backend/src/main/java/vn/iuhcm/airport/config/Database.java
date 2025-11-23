@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class Database {
     // change the URL (localhost\\SQLEXPRESS) to do the database connection
     private static final String URL = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=AirportDB;encrypt=false;trustServerCertificate=true";
-    private static final String USER = "sa";
+    private static final String USER = "Airport";
     private static final String PASS = "123456789";
 
     public static Connection getConnection() {

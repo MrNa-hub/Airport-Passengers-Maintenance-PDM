@@ -24,13 +24,18 @@ public class TicketController {
     }
 
     public static void create(Context ctx) {
+        // 1. Đọc JSON body và map sang object Ticket
         Ticket body = ctx.bodyAsClass(Ticket.class);
-        boolean ok = ticketDAO.insert(body);
 
-        if (ok) {
-            ctx.status(201).json(body);
+        // 2. Gọi DAO, nhận về Ticket đã insert (hoặc null nếu fail)
+        Ticket created = ticketDAO.insert(body);
+
+        // 3. Nếu insert thành công → created != null
+        if (created != null) {
+            ctx.status(201).json(created);
         } else {
             ctx.status(500).result("Cannot insert ticket");
         }
     }
+
 }

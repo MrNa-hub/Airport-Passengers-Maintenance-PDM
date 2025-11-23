@@ -23,7 +23,7 @@ public class App {
 
         Javalin app = Javalin.create(config -> {
             config.plugins.enableCors(cors -> {
-                cors.addRule(corsConfig -> {
+                cors.add(corsConfig -> {
                     corsConfig.anyHost();
                     corsConfig.allowCredentials = true;
                 });
@@ -46,7 +46,7 @@ public class App {
         // PASSENGERS
         app.get("/api/passengers", ctx -> ctx.json(passengerDAO.findAll()));
 
-        app.get("/api/passengers/:id", ctx -> {
+        app.get("/api/passengers/{id}", ctx -> {
             Passenger p = passengerDAO.findById(ctx.pathParam("id"));
             if (p == null) {
                 ctx.status(404).result("Passenger not found");
@@ -65,7 +65,7 @@ public class App {
             }
         });
 
-        app.put("/api/passengers/:id", ctx -> {
+        app.put("/api/passengers/{id}", ctx -> {
             try {
                 Passenger p = ctx.bodyAsClass(Passenger.class);
                 p.passengerID = ctx.pathParam("id");
@@ -80,7 +80,7 @@ public class App {
             }
         });
 
-        app.delete("/api/passengers/:id", ctx -> {
+        app.delete("/api/passengers/{id}", ctx -> {
             try {
                 String id = ctx.pathParam("id");
                 boolean ok = passengerDAO.delete(id);
@@ -114,7 +114,7 @@ public class App {
             }
         });
 
-        app.delete("/api/passenger-phone-nums/:passengerId/:phoneNum", ctx -> {
+        app.delete("/api/passenger-phone-nums/{passengerId}/{phoneNum}", ctx -> {
             try {
                 String passengerId = ctx.pathParam("passengerId");
                 String phoneNum = ctx.pathParam("phoneNum");
@@ -151,7 +151,7 @@ public class App {
             }
         });
 
-        app.delete("/api/passenger-travel-histories/:passengerId/:travelHistory", ctx -> {
+        app.delete("/api/passenger-travel-histories/{passengerId}/{travelHistory}", ctx -> {
             try {
                 String passengerId = ctx.pathParam("passengerId");
                 String travelHistory = ctx.pathParam("travelHistory");
@@ -169,7 +169,7 @@ public class App {
         });
 
         // PASSENGER TICKETS (nested route)
-        app.get("/api/passengers/:id/tickets", ctx -> {
+        app.get("/api/passengers/{id}/tickets", ctx -> {
             String passengerId = ctx.pathParam("id");
             // Filter tickets by passengerId
             List<Ticket> allTickets = ticketDAO.findAll();
@@ -182,7 +182,7 @@ public class App {
         // TICKETS
         app.get("/api/tickets", ctx -> ctx.json(ticketDAO.findAll()));
 
-        app.get("/api/tickets/:id", ctx -> {
+        app.get("/api/tickets/{id}", ctx -> {
             Ticket t = ticketDAO.findById(ctx.pathParam("id"));
             if (t == null) {
                 ctx.status(404).result("Ticket not found");
@@ -204,12 +204,12 @@ public class App {
         // LUGGAGE
         app.get("/api/luggages", ctx -> ctx.json(luggageDAO.findAll()));
 
-        app.get("/api/luggages/:id", ctx -> {
+        app.get("/api/luggages/{id}", ctx -> {
             ctx.json(luggageDAO.findById(ctx.pathParam("id")));
         });
 
         // LUGGAGE: New Nested Route
-        app.get("/api/tickets/:ticketId/luggages", LuggageController::getAllByTicketId);
+        app.get("/api/tickets/{ticketId}/luggages", LuggageController::getAllByTicketId);
 
         app.post("/api/luggages", ctx -> {
             Luggage l = ctx.bodyAsClass(Luggage.class);
@@ -220,7 +220,7 @@ public class App {
         // FLIGHTS
         app.get("/api/flights", ctx -> ctx.json(flightDAO.findAll()));
 
-        app.get("/api/flights/:id", ctx -> {
+        app.get("/api/flights/{id}", ctx -> {
             ctx.json(flightDAO.findById(ctx.pathParam("id")));
         });
 
@@ -233,7 +233,7 @@ public class App {
         // EMPLOYEES
         app.get("/api/employees", ctx -> ctx.json(employeeDAO.findAll()));
 
-        app.get("/api/employees/:id", ctx -> {
+        app.get("/api/employees/{id}", ctx -> {
             ctx.json(employeeDAO.findById(ctx.pathParam("id")));
         });
 
