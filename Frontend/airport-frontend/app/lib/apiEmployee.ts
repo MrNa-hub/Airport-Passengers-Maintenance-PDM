@@ -1,29 +1,29 @@
 import type { Employee } from '../types/Employee';
-const BASE = 'http://localhost:7070/api';
+import { apiGet, apiPost , apiDelete} from './apiClient';
 
-export async function getEmployees(): Promise<Employee[]> {
-  const res = await fetch(`${BASE}/employees`);
-  if (!res.ok) throw new Error('Failed to load employees');
-  return res.json();
+
+const BASE_PATH = '/api/employee';
+
+
+export async function getAllEmployees(): Promise<Employee[]> {
+  return apiGet<Employee[]>(BASE_PATH);
 }
-
-export async function getEmployee(id: string): Promise<Employee> {
-  const res = await fetch(`${BASE}/employees/${id}`);
-  if (!res.ok) throw new Error('Failed to load employee');
-  return res.json();
+/**
+* @param id the EmployeeById
+* @returns
+*/
+export async function getEmployeeById(employeeID: string): Promise<Employee> {
+  return apiGet<Employee>(`${BASE_PATH}/${employeeID}`);
 }
+/**
+* @param employee
+* @returns
+*/
+export async function createEmployee(employee: Omit<Employee, 'employeeID'>): Promise<Employee> {
+  return apiPost<Employee>(BASE_PATH, employee);
+  }
 
-export async function createEmployee(data: Employee) {
-  const res = await fetch(`${BASE}/employees`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  });
-  if (!res.ok) throw new Error('Failed to create employee');
-  return res.json();
-}
 
-export async function deleteEmployee(id: string) {
-  const res = await fetch(`${BASE}/employees/${id}`, { method: 'DELETE' });
-  if (!res.ok) throw new Error('Failed to delete employee');
+export async function deleteEmployee(id: string): Promise<void>  {
+  return apiDelete<void>(`${BASE_PATH}/${id}`);
 }

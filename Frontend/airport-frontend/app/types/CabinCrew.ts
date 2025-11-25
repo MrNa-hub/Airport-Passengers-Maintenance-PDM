@@ -1,4 +1,4 @@
-// src/types/cabin-crew.ts
+// src/types/CabinCrew.ts
 export type CabinCrew = {
   employeeID: string;
   certificationArea: string;

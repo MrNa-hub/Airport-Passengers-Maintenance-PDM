@@ -1,47 +1,19 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { getEmployees, deleteEmployee } from '@/api/employees';
-import type { Employee } from '@/types/employee';
-import Link from 'next/link';
+import EntityListPage from '@/app/_components/EntityListPage';
+import { Luggage } from '@/app/types/Employee'; 
 
-export default function EmployeesPage() {
-  const [employees, setEmployees] = useState<Employee[]>([]);
+const columns = [
+  { key: 'fullName', label: 'Full Name' },
+  { key: 'employeeID', label: 'Employee ID' },
+];
 
-  const load = async () => {
-    const data = await getEmployees();
-    setEmployees(data);
-  };
-
-  useEffect(() => { load(); }, []);
-
-  const handleDelete = async (id: string) => {
-    if (!confirm('Delete this employee?')) return;
-    await deleteEmployee(id);
-    load();
-  };
-
+export default function LuggagesPage() {
   return (
-    <div>
-      <h1>Employees</h1>
-      <Link href="/employees/new">New Employee</Link>
-      <table>
-        <thead>
-          <tr><th>ID</th><th>Name</th><th>Role</th><th>Email</th><th>Actions</th></tr>
-        </thead>
-        <tbody>
-          {employees.map(e => (
-            <tr key={e.employeeID}>
-              <td>{e.employeeID}</td>
-              <td>{e.firstName} {e.middleName} {e.lastName}</td>
-              <td>{e.role}</td>
-              <td>{e.email}</td>
-              <td>
-                <button onClick={() => handleDelete(e.employeeID)}>Delete</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <EntityListPage<Luggage>
+      title="Employee Records"
+      apiPath="/api/employee"
+      columns={columns}
+      newHref="/employee/new"
+    />
   );
 }

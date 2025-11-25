@@ -39,4 +39,5 @@ public class PassengerController {
             ctx.status(500).result("Cannot insert passenger: " + e.getMessage());
         }
     }
+    
 }

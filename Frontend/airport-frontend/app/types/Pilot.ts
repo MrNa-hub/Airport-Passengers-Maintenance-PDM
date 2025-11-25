@@ -1,4 +1,4 @@
-// src/types/pilot.ts
+// src/types/Pilot.ts
 export type Pilot = {
   employeeID: string; // FK sang employees
   pilotLicenseNo: string;

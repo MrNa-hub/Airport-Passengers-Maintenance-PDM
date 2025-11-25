@@ -1,11 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { getFlights } from '@/api/flights';
-import { getEmployees } from '@/api/employees';
-import { createAssignee } from '@/api/assignees';
-import type { Flight } from '@/types/flight';
-import type { Employee } from '@/types/employee';
+import { getFlights } from '../lib/api/Flight';
+import { getEmployees } from '../lib/api/Employee';
+import { createAssignee } from '../lib/api/Assignee';
+import type { Flight } from '../types/Flight';
+import type { Employee } from '../types/Employee';
 
 export default function NewAssigneePage() {
   const router = useRouter();
@@ -13,45 +13,78 @@ export default function NewAssigneePage() {
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [flightID, setFlightID] = useState('');
   const [employeeID, setEmployeeID] = useState('');
-  const [duty, setDuty] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const load = async () => {
-      const [f, e] = await Promise.all([getFlights(), getEmployees()]);
-      setFlights(f);
-      setEmployees(e);
+      try {
+        const [f, e] = await Promise.all([getFlights(), getEmployees()]);
+        setFlights(f);
+        setEmployees(e);
+      } catch (err) {
+        setError('Failed to load flights or employees');
+      }
     };
     load();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await createAssignee({ flightID, employeeID, duty });
-    router.push('/assignees');
+    setLoading(true);
+    setError(null);
+    try {
+      await createAssignee({ employeeID, flightID });
+      router.push('/assignees');
+    } catch (err) {
+      setError('Failed to create assignee');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <select value={flightID} onChange={e => setFlightID(e.target.value)} required>
-        <option value="">Select Flight</option>
-        {flights.map(f => (
-          <option key={f.flightID} value={f.flightID}>
-            {f.flightNum} – {f.departureAirportID} → {f.arrivalAirportID} ({f.departureTime})
-          </option>
-        ))}
-      </select>
+    <div>
+      <h1>New Assignee</h1>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
 
-      <select value={employeeID} onChange={e => setEmployeeID(e.target.value)} required>
-        <option value="">Select Employee</option>
-        {employees.map(emp => (
-          <option key={emp.employeeID} value={emp.employeeID}>
-            {emp.employeeID} – {emp.firstName} {emp.middleName} {emp.lastName} ({emp.role})
-          </option>
-        ))}
-      </select>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Flight</label>
+          <select
+            value={flightID}
+            onChange={e => setFlightID(e.target.value)}
+            required
+          >
+            <option value="">Select a flight</option>
+            {flights.map(f => (
+              <option key={f.flightID} value={f.flightID}>
+                {f.flightNum} – {f.origin} → {f.destination} ({f.departureTime})
+              </option>
+            ))}
+          </select>
+        </div>
 
-      <input type="text" placeholder="Duty" value={duty} onChange={e => setDuty(e.target.value)} required />
-      <button type="submit">Assign</button>
-    </form>
+        <div>
+          <label>Employee</label>
+          <select
+            value={employeeID}
+            onChange={e => setEmployeeID(e.target.value)}
+            required
+          >
+            <option value="">Select an employee</option>
+            {employees.map(emp => (
+              <option key={emp.employeeID} value={emp.employeeID}>
+                {emp.employeeID} – {emp.fullName}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <button type="submit" disabled={loading}>
+          {loading ? 'Saving...' : 'Create Assignee'}
+        </button>
+      </form>
+    </div>
   );
 }

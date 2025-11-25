@@ -1,4 +1,4 @@
-// src/types/ground-staff.ts
+// src/types/GroundStaff.ts
 export type GroundStaff = {
   employeeID: string;
   department: string;

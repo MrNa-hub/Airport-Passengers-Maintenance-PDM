@@ -1,18 +1,23 @@
 import type { Pilot } from '../types/Pilot';
-const BASE = 'http://localhost:7070/api';
+import { apiGet, apiPost, apiPut, apiDelete } from './apiClient';
+const BASE_PATH = '/api/pilot';
 
-export async function getPilot(): Promise<Pilot[]> {
-  const res = await fetch(`${BASE}/pilot`);
-  if (!res.ok) throw new Error('Failed to load pilot');
-  return res.json();
+export async function getAllPilot(): Promise<Pilot[]> {
+  return apiGet<Pilot[]>(BASE_PATH);
 }
 
-export async function createPilot(data: Pilot) {
-  const res = await fetch(`${BASE}/pilot`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  });
-  if (!res.ok) throw new Error('Failed to create pilot');
-  return res.json();
+export async function getPilotById(id: string): Promise<Pilot> {
+  return apiGet<Pilot>(`${BASE_PATH}/${id}`);
+}
+
+export async function createGroundStaff(pilot: Omit<Pilot, 'employeeID'>): Promise<Pilot> {
+  return apiPost<Pilot>(BASE_PATH, pilot);
+}
+
+export async function updatePilot(id: string, pilot: Partial<Pilot>): Promise<Pilot> {
+  return apiPut<Pilot>(`${BASE_PATH}/${id}`, pilot);
+}
+
+export async function deletePilot(id: string): Promise<void> {
+  return apiDelete<void>(`${BASE_PATH}/${id}`);
 }

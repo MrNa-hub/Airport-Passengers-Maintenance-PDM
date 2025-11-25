@@ -3,9 +3,9 @@
 import EntityNewPage from '@/app/_components/EntityNewPage';
 
 const fields = [
-  { name: 'employeeID', label: 'EmployeeID', placeholder: 'E0001' },
-  { name: 'department', label: 'Department', placeholder: 'Check-in' },
-  { name: 'position', label: 'Position', placeholder: 'Staff' },
+  { name: 'employeeID', label: 'Employee ID', placeholder: 'EM01679' },
+  { name: 'department', label: 'Department', placeholder: 'Gate Operations' },
+  { name: 'position', label: 'Position', placeholder: 'Manager' },
 ];
 
 export default function NewGroundStaffPage() {

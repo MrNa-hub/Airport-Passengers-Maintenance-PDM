@@ -3,14 +3,14 @@
 import EntityNewPage from '@/app/_components/EntityNewPage';
 
 const fields = [
-  { name: 'employeeID', label: 'EmployeeID', placeholder: 'E0002' },
+  { name: 'employeeID', label: 'EmployeeID', placeholder: 'EM01015' },
   {
     name: 'pilotLicenseNo',
     label: 'Pilot License No',
-    placeholder: 'LIC-12345',
+    placeholder: 'VN-PL17195',
   },
-  { name: 'flightHours', label: 'Flight Hours', placeholder: '5000' },
-  { name: 'rank', label: 'Rank', placeholder: 'Captain' },
+  { name: 'flightHours', label: 'Flight Hours', placeholder: '7256' },
+  { name: 'rank', label: 'Rank', placeholder: 'First Officer' },
 ];
 
 export default function NewPilotPage() {

@@ -3,13 +3,13 @@
 import EntityNewPage from '@/app/_components/EntityNewPage';
 
 const fields = [
-  { name: 'employeeID', label: 'EmployeeID', placeholder: 'E0003' },
+  { name: 'employeeID', label: 'EmployeeID', placeholder: 'EM00415' },
   {
     name: 'certificationArea',
     label: 'Certification Area',
-    placeholder: 'Safety',
+    placeholder: 'International',
   },
-  { name: 'crewRank', label: 'Crew Rank', placeholder: 'Senior' },
+  { name: 'crewRank', label: 'Crew Rank', placeholder: 'Flight Attendant' },
 ];
 
 export default function NewCabinCrewPage() {

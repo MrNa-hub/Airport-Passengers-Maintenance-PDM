@@ -3,8 +3,8 @@
 import EntityNewPage from '@/app/_components/EntityNewPage';
 
 const fields = [
-  { name: 'phoneNum', label: 'Phone Number', placeholder: '+84...' },
-  { name: 'employeeID', label: 'EmployeeID', placeholder: 'E0001' },
+  { name: 'phoneNum', label: 'Phone Number', placeholder: '+84009903426' },
+  { name: 'employeeID', label: 'EmployeeID', placeholder: 'EM00001' },
 ];
 
 export default function NewEmployeePhoneNumPage() {

@@ -1,49 +1,62 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { getAssignees, deleteAssignee } from '@/api/assignees';
-import { getFlights } from '@/api/flights';
-import { getEmployees } from '@/api/employees';
-import type { Assignee } from '@/types/assignee';
-import type { Flight } from '@/types/flight';
-import type { Employee } from '@/types/employee';
+import { getAssignees, deleteAssignee } from '../lib/apiAssignee';
+import { getAllFlights } from '../lib/apiFlight';
+import { getEmployees } from '../lib/apiEmployee';
+import type { Assignee } from '../types/Assignee';
+import type { Flight } from '../types/Flight';
+import type { Employee } from '../types/Employee';
 import Link from 'next/link';
 
 export default function AssigneesPage() {
   const [assignees, setAssignees] = useState<Assignee[]>([]);
   const [flights, setFlights] = useState<Flight[]>([]);
   const [employees, setEmployees] = useState<Employee[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   const loadData = async () => {
-    const [a, f, e] = await Promise.all([getAssignees(), getFlights(), getEmployees()]);
-    setAssignees(a);
-    setFlights(f);
-    setEmployees(e);
+    try {
+      const [a, f, e] = await Promise.all([
+        getAssignees(),
+        getFlight(),
+        getEmployees(),
+      ]);
+      setAssignees(a);
+      setFlights(f);
+      setEmployees(e);
+    } catch (err) {
+      setError('Failed to load assignees');
+    }
   };
 
   useEffect(() => {
     loadData();
   }, []);
 
-  const handleDelete = async (flightID: string, employeeID: string) => {
+  const getFlight = (flightID: string) =>
+    flights.find(f => f.flightID === flightID);
+
+  const getEmployee = (employeeID: string) =>
+    employees.find(emp => emp.employeeID === employeeID);
+
+  const handleDelete = async (employeeID: string, flightID: string) => {
     if (!confirm('Delete this assignee?')) return;
-    await deleteAssignee(flightID, employeeID);
+    await deleteAssignee(employeeID, flightID);
     loadData();
   };
-
-  const getFlight = (flightID: string) => flights.find(f => f.flightID === flightID);
-  const getEmployee = (employeeID: string) => employees.find(e => e.employeeID === employeeID);
 
   return (
     <div>
       <h1>Assignees</h1>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
       <Link href="/assignees/new">New Assignee</Link>
+
       <table>
         <thead>
           <tr>
             <th>Flight</th>
             <th>Route</th>
             <th>Employee</th>
-            <th>Role/Duty</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -52,17 +65,29 @@ export default function AssigneesPage() {
             const f = getFlight(a.flightID);
             const emp = getEmployee(a.employeeID);
             return (
-              <tr key={`${a.flightID}-${a.employeeID}`}>
-                <td>{f?.flightNum || a.flightID}</td>
-                <td>{f ? `${f.departureAirportID} → ${f.arrivalAirportID}` : '-'}</td>
-                <td>{emp ? `${emp.firstName} ${emp.middleName || ''} ${emp.lastName}` : a.employeeID}</td>
-                <td>{a.duty}</td>
+              <tr key={`${a.employeeID}-${a.flightID}`}>
+                <td>{f ? f.flightNum : a.flightID}</td>
                 <td>
-                  <button onClick={() => handleDelete(a.flightID, a.employeeID)}>Delete</button>
+                  {f ? `${f.origin} → ${f.destination}` : '-'}
+                </td>
+                <td>{emp ? emp.fullName : a.employeeID}</td>
+                <td>
+                  <button
+                    onClick={() =>
+                      handleDelete(a.employeeID, a.flightID)
+                    }
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             );
           })}
+          {assignees.length === 0 && (
+            <tr>
+              <td colSpan={4}>No assignees found</td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>

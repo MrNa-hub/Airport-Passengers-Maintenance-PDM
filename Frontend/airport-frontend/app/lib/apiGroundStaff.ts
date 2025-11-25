@@ -1,18 +1,24 @@
 import type { GroundStaff } from '../types/GroundStaff';
-const BASE = 'http://localhost:7070/api';
+import { apiGet, apiPost, apiDelete , apiPut} from './apiClient';
 
-export async function getPilot(): Promise<GroundStaff[]> {
-  const res = await fetch(`${BASE}/groundStaff`);
-  if (!res.ok) throw new Error('Failed to load groundStaff');
-  return res.json();
+const BASE_PATH = '/api/groundStaff';
+
+export async function getAllGroundStaff(): Promise<GroundStaff[]> {
+  return apiGet<GroundStaff[]>(BASE_PATH);
 }
 
-export async function createPilot(data: GroundStaff) {
-  const res = await fetch(`${BASE}/groundStaff`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  });
-  if (!res.ok) throw new Error('Failed to create groundStaff');
-  return res.json();
+export async function getGroundStaffById(id: string): Promise<GroundStaff> {
+  return apiGet<GroundStaff>(`${BASE_PATH}/${id}`);
+}
+
+export async function createGroundStaff(groundstaff: Omit<GroundStaff, 'employeeID'>): Promise<GroundStaff> {
+  return apiPost<GroundStaff>(BASE_PATH, groundstaff);
+}
+
+export async function updateGroundStaff(id: string, groundStaff: Partial<GroundStaff>): Promise<GroundStaff> {
+  return apiPut<GroundStaff>(`${BASE_PATH}/${id}`, groundStaff);
+}
+
+export async function deleteGroundStaff(id: string): Promise<void> {
+  return apiDelete<void>(`${BASE_PATH}/${id}`);
 }
