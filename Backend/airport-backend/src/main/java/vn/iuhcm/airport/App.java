@@ -7,6 +7,8 @@ import vn.iuhcm.airport.passenger.*;
 import vn.iuhcm.airport.ticket.Boarding;
 import vn.iuhcm.airport.ticket.BoardingDAO;
 import vn.iuhcm.airport.ticket.Ticket;
+import vn.iuhcm.airport.ticket.TicketDAO;
+import vn.iuhcm.airport.luggage.SecurityRestrictedItemsFoundDAO;
 
 import java.util.List;
 
@@ -201,8 +203,6 @@ public class App {
                 ctx.result("Error fetching boarding record: " + e.getMessage());
             }
         });
-
-        // ... (Inside App.java Main method) ...
 
         // ===================== TICKET API =====================
 
