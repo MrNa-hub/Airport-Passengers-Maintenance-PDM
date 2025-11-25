@@ -14,7 +14,7 @@ public class PassengerController {
     }
 
     // GET /api/passengers/{id}
-    public static void getById(Context ctx) {
+    public static void getPassenById(Context ctx) {
         String id = ctx.pathParam("id");
 
         Passenger p = passengerDAO.findById(id);

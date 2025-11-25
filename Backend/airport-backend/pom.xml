@@ -52,11 +52,10 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
+                    <!-- Class main của backend -->
                     <mainClass>vn.iuhcm.airport.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 </project>
-
-

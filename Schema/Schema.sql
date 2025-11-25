@@ -157,9 +157,6 @@ CREATE TABLE Boarding (
 
     CONSTRAINT PK_Boarding PRIMARY KEY (PassID),
 
-    CONSTRAINT FK_Boarding_Flight
-        FOREIGN KEY (FlightID) REFERENCES Flight(FlightID),
-
     CONSTRAINT FK_Boarding_Ticket
         FOREIGN KEY (TicketID) REFERENCES Ticket(TicketID)
 );
